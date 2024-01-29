@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+header{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 204px;
+    padding-top: 45px;
+}
+
+header .left-section{
+    display: flex;
+    align-items: flex-start;
+    gap: 68px;
+}
+
+header .left-section p{
+    color: var(--Secondary, #FC4308);
+    font-size: 22px;    
+    font-weight: 700;
+}
+
+header .left-section ul{
+    list-style: none;
+    display: flex;
+    gap: 34px;
+    font-size: 16px;
+    font-weight: 700;   
+}
+
+header .left-section ul li select{
+    border: none;
+    color: var(--Black, #3E3232);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+header .left-section ul li a{
+    color: var(--Black, #3E3232);
+    text-decoration: none;
+}
+
+
+
+header .right-section{
+    display: flex;
+    align-items: center;
+}
+
+
+header .right-section .profile{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 50px;
+}
+
+header .right-section .profile .avatar{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .right-section .profile .p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+
+header .right-section .search-input{
+    border: 1px solid #F5F5F5;
+    background-color: #F5F5F5;
+}
+header .right-section .search-input1{
+    margin-right: 25px;
+}
+ 
+header .right-section .left-icon input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+ 
+header .right-section .search-text{
+    border: 1px solid #F5F5F5;
+    display: flex;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+
+
+
+
+@media screen and (max-width: 744px) {
+    header .left-section ul{
+        display: none;
+    }
+}
