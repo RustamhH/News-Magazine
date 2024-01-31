@@ -42,7 +42,7 @@ header .right-section{
     display: flex;
 }
 
-.left-section a img{
+.left-section .btn{
     display: none;
 }
  
@@ -180,8 +180,9 @@ header .right-section .profile .p{
     header .right-section{
         padding-left: 9.4vh;
         padding-right: 9.4vh;
+        align-items: center;
     }
-    .left-section a img{
+    .left-section .btn{
         display: flex;
     }
     header #tablet-search{
@@ -193,6 +194,7 @@ header .right-section .profile .p{
 @media screen and (max-width: 600px) {
     header #desktop-search{
         width: 300px;
+        margin-right: 0px;
     }
     header #desktop-search .search-box{
         width: 187px;
