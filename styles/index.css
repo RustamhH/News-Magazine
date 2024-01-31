@@ -1,59 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto';
 }
-
-
-header{
-    display: flex;
-    align-items: flex-start;
-    padding-left: 204px;
-    padding-top: 45px;
+ 
+p{
+    margin: 0px !important;
 }
+ 
+body {
+    min-width: 390px; /* Adjust this value as needed */
+}
+ 
+/*!Header*/
 
+header {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+ 
+header .header-div{
+    display: flex;
+    padding-top: 45px;
+    justify-content: space-around;
+
+}
+ 
 header .left-section{
     display: flex;
-    align-items: flex-start;
     gap: 68px;
+    
 }
-
-header .left-section p{
-    color: var(--Secondary, #FC4308);
-    font-size: 22px;    
-    font-weight: 700;
-}
-
-header .left-section ul{
-    list-style: none;
-    display: flex;
-    gap: 34px;
-    font-size: 16px;
-    font-weight: 700;   
-}
-
-header .left-section ul li select{
-    border: none;
-    color: var(--Black, #3E3232);
-    font-size: 16px;
-    font-weight: 700;
-}
-
-
-
-header .left-section ul li a{
-    color: var(--Black, #3E3232);
-    text-decoration: none;
-}
-
-
 
 header .right-section{
     display: flex;
+}
+
+.left-section a img{
+    display: none;
+}
+ 
+header .left-section .logo-text{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    color: var(--Secondary, #FC4308);
+    font-size: 22px;
+    font-weight: 700;
+}
+ 
+header .left-section .navbar a{
+    text-decoration: none;
+    color: var(--Black, #3E3232);
+    font-size: 16px;
+    text-wrap: nowrap;
+    font-weight: 700;
+}
+
+header .left-section .navbar select {
+    border: none;
+    outline: none;
+    color: var(--Black, #3E3232);
+    font-weight: 700;
+}
+ 
+header .left-section .navbar{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 34px;
+}
+
+ 
+
+header .search-section{
+    height: 48px;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    background: var(--Gray, #F5F5F5);
+}
+
+header #desktop-search{
+    display: flex;
+    width: 400px;
+    margin-right: 25px;
+}
+ 
+header .search-section #ellipsis{
+    color: var(--Black-75, rgba(62, 50, 50, 0.75));
+    text-align: center;
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    font-weight: 900;
+}
+ 
+header .search-section .search{
+    color: var(--Black, #3E3232);
+    text-align: center;
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    font-weight: 900;
+}
+ 
+header .search-box input{
+    width: 280px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+header #tablet-search{
+    display: none;
+    width: 583px;
+}
+
+header #desktop-search .search-box{
+    width: 287px;
+}
+header #tablet-search .search-box{
+    width: 492px;
 }
 
 
@@ -81,32 +154,79 @@ header .right-section .profile .p{
 
 
 
-header .right-section .search-input{
-    border: 1px solid #F5F5F5;
-    background-color: #F5F5F5;
-}
-header .right-section .search-input1{
-    margin-right: 25px;
-}
- 
-header .right-section .left-icon input{
-    border: none;
-    outline: none;
-    background: transparent;
-}
- 
-header .right-section .search-text{
-    border: 1px solid #F5F5F5;
-    display: flex;
-    background-color: #F5F5F5;
-    border-radius: 12px;
-}
+/*!Header End*/
 
 
 
+@media screen and (max-width: 1512px) {
+    header{
+        gap:20px;
+        align-items: center;
+    }
+    header .left-section .navbar{
+        display: none;
+    }
+    header #desktop-search{
+        display: none;
+    }
+    header .header-div {
+        padding-top: 15px;
+    }
+    header .left-section{
+        padding-left: 9.4vh;
+        padding-right: 9.4vh;
+        gap:30px;
+    }
+    header .right-section{
+        padding-left: 9.4vh;
+        padding-right: 9.4vh;
+    }
+    .left-section a img{
+        display: flex;
+    }
+    header #tablet-search{
+        display: flex;
+    }
+}
 
-@media screen and (max-width: 744px) {
-    header .left-section ul{
+
+@media screen and (max-width: 600px) {
+    header #desktop-search{
+        width: 300px;
+    }
+    header #desktop-search .search-box{
+        width: 187px;
+    }
+    header .header-div {
+        padding-top: 45px;
+        gap:10px;
+    }
+
+    header .left-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    header .right-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    header .left-section .navbar{
+        display: none;
+    }
+    header .left-section .logo-text{
+        display: none;
+    }
+    header .right-section .profile{
+        display: none;
+    }
+    header .right-section .save-button{
+        display: none;
+    }
+    header #desktop-search{
+        display: flex;
+    }
+    header #tablet-search{
         display: none;
     }
 }
