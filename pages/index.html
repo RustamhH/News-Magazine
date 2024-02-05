@@ -16,33 +16,56 @@
     <!--!Header-->
  
     <header>
-        <div class="header-div">
+        <div class="header-div container">
             <div class="left-section">
-                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                    <img src="/images/index/menu.png">
-                </a> 
+                <div>
+                    <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                        <img src="/images/index/menu.png">
+                    </a> 
+                </div>
+                
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <p class="logo-text-hamburger">MEGA.news</p>
+                    <a href="#" data-bs-dismiss="offcanvas"><img src="/images/index/close.png" alt=""></a>
                 </div>
                 <div class="offcanvas-body">
-                    <div>
-                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                    </div>
-                    <div class="dropdown mt-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown" style="font-weight: 700; font-size: 16px; color: #3E3232; border-radius: 12px; margin-bottom: 10px;">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between" style="padding-left: 10px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="font-weight: 700; font-size: 16px; color: #3E3232; border-radius: 12px; margin-bottom: 10px;">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between" style="padding-left: 10px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" style="font-weight: 700; padding-left: 10px; font-size: 16px; color: #3E3232; margin-bottom: 10px;" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" style="font-weight: 700; padding-left: 10px; font-size: 16px; color: #3E3232;" href="#">About Us</a>
+                        </li>
                     </ul>
-                    </div>
                 </div>
                 </div>
-                <!-- <a href=""><img src="/images/index/menu.png"></a> -->
                 <p class="logo-text">MEGA.news</p>
                 <div class="navbar">
                     <select><option>Categories</option></select>
@@ -106,6 +129,221 @@
 
     <main>
         
+        <div class="carousel-section">
+            <div class="carousel-cards mt-5 ">
+              <div class="card">
+              <img src="/images/index/food.png" alt="">
+                <p>#Food</p>
+              </div>
+       
+              <div class="card">
+                  <img src="/images/index/animal.png" alt="">
+                <p>#Animal</p>
+              </div>
+       
+              <div class="card">
+                  <img src="/images/index/car.png" alt="">
+       
+                <p>#Car</p>
+              </div>
+       
+              <div class="card">
+                  <img src="/images/index/sport.png" alt="">
+                <p>#Sport</p>
+              </div>
+       
+              <div class="card">
+                  <img src="/images/index/music.png" alt="">
+                <p>#Music</p>
+              </div>
+       
+              <div class="card">
+                  <img src="/images/index/technology.png" alt="">
+                <p>#Technlogy</p>
+              </div>
+       
+              <div class="card">
+                  <img src="/images/index/abstract.png" alt="">
+       
+                <p>#Abstract</p>
+              </div>
+              <div id="nature-item" class="card">
+                  <img  src="/images/index/nature.png" alt="">
+                <p>#Nature</p>
+              </div>
+       
+              <div class="next-btn">
+                <img src="/images/index/Arrow.png" id="nextBtn" alt="">
+              </div>
+            </div>
+        </div>
+
+      
+
+
+
+
+
+
+
+
+        <div class="news-slider-section">
+            <div class="news-item">
+                <img src="/images/index/carnews.png" alt="">
+                <div>
+                    <p class="big-text">How to Drive a Car Safely</p>
+                    <p class="small-text">Ah, the joy of the open road—it’s a good feeling. But if you’re new to driving, you may...</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="/images/index/musicnews.png" alt="">
+                <div>
+                    <p class="big-text">How to Make Dance Music</p>
+                    <p class="small-text">Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking...</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="/images/index/technologynews.png" alt="">
+                <div>
+                    <p class="big-text">Why I Stopped Using Multiple Monitor</p>
+                    <p class="small-text">A Single Monitor Manifesto — Many developers believe multiple monitors improve productivity. Studies have proven it, right? Well, keep in mind, many of...</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="carouselExampleFade" style="width:607px; margin:0 auto;" class="carousel slide carousel-fade mt-5">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/index/technologynewstablet.png" class="d-block w-100" style="border-radius: 12px;" alt="...">
+                    <div class="rounded-item">
+                        <p class="big-text">Why I Stopped Using Multiple Monitor</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/index/musicnewstablet.png" class="d-block w-100" style="border-radius: 12px;" alt="...">
+                    <div class="rounded-item">
+                        <p class="big-text">How to Make Dance Music</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/index/carnewstablet.png" class="d-block w-100" style="border-radius: 12px;" alt="...">
+                    <div class="rounded-item">
+                        <p class="big-text">How to Drive a Car Safely</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <img src="/images/index/prev-icon.png" alt="">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <img src="/images/index/next-icon.png" alt="">
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="popular-posts-section d-flex flex-column gap-4 mb-5" style="width: 1512px; margin: 0 auto; background-color: #FAFAFA;">
+            
+            <div class="header d-flex justify-content-between">
+                <div class="header-text d-flex align-items-center gap-2">
+                    <img src="/images/index/Rectangle.png" alt="">
+                    <p style="font-size: 20px;">Popular Posts</p>
+                </div>
+                <div class="buttons d-flex" style="gap:20px">
+                    <a href=""><img src="/images/index/prev-icon.png" alt=""></a>
+                    <a href=""><img src="/images/index/next-icon.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="popular-cards d-flex justify-content-between">
+
+
+                <div class="card">
+                    <img src="/images/index/sportPopular.png" alt="">
+                    <div class="texts">
+                        <p class="big-text">Opening Day Of Boating Season, Seattle WA</p>
+                        <p class="small-text">Of course the Puget Sound is very watery, and where there is water, there are boats. Today is...</p>
+                    </div>
+                    <div class="author">
+                        <img src="/images/index/james.png" alt="">
+                        <div class="author-texts">
+                            <p class="big-text">James</p>
+                            <p class="small-text">August 18 , 2022</p>
+                        </div>
+                        <a href=""><img src="/images/index/bookmark-icon.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/index/technologyPopular.png" alt="">
+                    <div class="texts">
+                        <p class="big-text">How To Choose The Right Laptop For...</p>
+                        <p class="small-text">Choosing the right laptop for programming can be a tough process. It’s easy to get confused...</p>
+                    </div>
+                    <div class="author">
+                        <img src="/images/index/louis.png" alt="">
+                        <div class="author-texts">
+                            <p class="big-text">Louis Hoebregts</p>
+                            <p class="small-text">July 25 , 2022</p>
+                        </div>
+                        <a href=""><img src="/images/index/bookmark-icon.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/index/carPopular.png" alt="">
+                    <div class="texts">
+                        <p class="big-text">How We Built The First Real Self-Driving Car</p>
+                        <p class="small-text">Electric self-driving cars will save millions of lives and significantly accelerate the world’s...</p>
+                    </div>
+                    <div class="author">
+                        <img src="/images/index/mary.png" alt="">
+                        <div class="author-texts">
+                            <p class="big-text">Mary</p>
+                            <p class="small-text">July 14 , 2022</p>
+                        </div>
+                        <a href=""><img src="/images/index/bookmark-icon.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/index/foodPopular.png" alt="">
+                    <div class="texts">
+                        <p class="big-text">How To Persuade Your Parents To Buy Fast...</p>
+                        <p class="small-text">Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealth...</p>
+                    </div>
+                    <div class="author">
+                        <img src="/images/index/jon.png" alt="">
+                        <div class="author-texts">
+                            <p class="big-text">Jon Kantner</p>
+                            <p class="small-text">May 10 , 2022</p>
+                        </div>
+                        <a href=""><img src="/images/index/bookmark-icon.png" alt=""></a>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+
+
+
+
     </main>
 
 
@@ -117,8 +355,8 @@
 
 
 
-
 </body>
+<script src="/scripts/index.js"></script>
 
 
 

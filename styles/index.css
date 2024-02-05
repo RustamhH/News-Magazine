@@ -13,8 +13,10 @@ p{
 }
  
 body {
-    min-width: 390px; /* Adjust this value as needed */
+    min-width: 390px;
 }
+
+
  
 /*!Header*/
 
@@ -22,20 +24,20 @@ header {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
 }
  
 header .header-div{
     display: flex;
     padding-top: 45px;
-    justify-content: space-around;
-
+    gap: 192px;
+    justify-content: center;
 }
- 
+
+
+
+
 header .left-section{
-    display: flex;
-    gap: 68px;
-    
+    display: flex;    
 }
 
 header .right-section{
@@ -47,6 +49,14 @@ header .right-section{
 }
  
 header .left-section .logo-text{
+    display: flex;
+    align-items: center;
+    padding-right: 68px;
+    color: var(--Secondary, #FC4308);
+    font-size: 22px;
+    font-weight: 700;
+}
+header .left-section .logo-text-hamburger{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,6 +110,7 @@ header .search-section #ellipsis{
     font-family: "Font Awesome 6 Free";
     font-size: 20px;
     font-weight: 900;
+    margin-top:3px;
 }
  
 header .search-section .search{
@@ -111,7 +122,6 @@ header .search-section .search{
 }
  
 header .search-box input{
-    width: 280px;
     border: none;
     background: transparent;
     outline: none;
@@ -119,13 +129,13 @@ header .search-box input{
 
 header #tablet-search{
     display: none;
-    width: 583px;
+    width: 604px;
 }
 
-header #desktop-search .search-box{
+header #desktop-search .search-box input{
     width: 287px;
 }
-header #tablet-search .search-box{
+header #tablet-search .search-box input{
     width: 492px;
 }
 
@@ -152,11 +162,244 @@ header .right-section .profile .p{
 }
 
 
-
-
 /*!Header End*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Start */
+
+
+/* Carousel Start */
+.carousel-section{
+    width: 1512px;
+    margin: 0 auto;
+    padding-bottom: 128px;
+}
+
+.carousel-section .card{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    width: 170px;
+    flex: none;
+    border-radius: 12px;
+    padding:10px;
+    color: #ffffff;
+    position: relative;
+}
+.carousel-section .card p{
+    position: absolute;
+}
+ 
+.carousel-section .card img{
+    position: absolute;
+    border-radius: 12px;
+    width: 100%;
+    height: 48px;
+    top: 0;
+}
+
+ 
+.carousel-section .carousel-cards{
+    background-color: #F5F5F5;
+    display: flex;
+    overflow-x: scroll;
+    border-radius: 12px;
+    padding: 10px;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.carousel-section .carousel-cards::-webkit-scrollbar{
+    display: none;
+}
+.carousel-section .carousel-cards .next-btn{
+    position:sticky;
+    right: 0;
+    transform: translateX(10%);
+}
+
+/* Carousel End */
+
+
+
+
+
+/* News Slider Start */
+
+
+main .news-slider-section {
+    display: flex;
+    gap:32px;
+    justify-content: center;    
+}
+
+
+main .news-slider-section .news-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+main .news-slider-section .news-item div{
+    position: absolute;
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    bottom:10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+main .news-slider-section .news-item img{
+    border-radius: 12px;
+}
+
+main .news-slider-section .news-item div .big-text{
+    font-size: 25px;
+}
+
+main .news-slider-section .news-item div .small-text{
+    font-size: 14px;
+}
+
+
+
+main #carouselExampleFade{
+    display: none;
+}
+
+.carousel-item .rounded-item{
+    position: absolute;
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    bottom:10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding:10px 0px 40px 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+/* News Slider End */
+
+
+
+
+/* Popular Posts Start */
+
+.popular-posts-section .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    flex: none;
+    outline: none;
+    position: relative;
+    gap:12px;
+    border-radius: 12px;
+    padding:10px;
+    background-color: white;
+}
+
+.popular-posts-section .card .texts{
+    display: flex;
+    flex-direction: column;
+    color: #3E3232;
+    width: 328px;
+    gap:8px;
+}
+
+.popular-posts-section .card .texts .big-text{
+    font-weight: 700;
+    font-size: 16px;
+}
+.popular-posts-section .card .texts .small-text{
+    font-size: 14px;
+}
+
+.popular-posts-section .card .author{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    padding: 13px 16px 13px 16px;
+}
+
+.popular-posts-section .card .author .author-texts{
+    display: flex;
+    flex-direction: column;
+    color: #3E3232;
+    width: 234px;
+    gap:4px;
+}
+
+
+.popular-posts-section .card .author .author-texts .big-text{
+    font-weight: 700;
+    font-size: 14px;
+}
+.popular-posts-section .card .author-texts .small-text{
+    font-size: 12px;
+}
+/* Popular Posts End */
+
+
+
+
+
+
+
+
+/* Main End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
 
 @media screen and (max-width: 1512px) {
     header{
@@ -171,21 +414,34 @@ header .right-section .profile .p{
     }
     header .header-div {
         padding-top: 15px;
+        gap:140px;
     }
     header .left-section{
-        padding-left: 9.4vh;
-        padding-right: 9.4vh;
-        gap:30px;
+        gap:5px;
+        align-items: center;
     }
     header .right-section{
-        padding-left: 9.4vh;
-        padding-right: 9.4vh;
         align-items: center;
+    }
+    header .right-section .profile{
+        margin-right: 25px;
     }
     .left-section .btn{
         display: flex;
     }
     header #tablet-search{
+        display: flex;
+    }
+    .news-slider-section {
+        display: none;
+    }
+    .carousel-section{
+        display: none;
+    }
+    main .news-slider-section{
+        display: none;
+    }
+    main #carouselExampleFade{
         display: flex;
     }
 }
@@ -196,7 +452,7 @@ header .right-section .profile .p{
         width: 300px;
         margin-right: 0px;
     }
-    header #desktop-search .search-box{
+    header #desktop-search .search-box input{
         width: 187px;
     }
     header .header-div {
@@ -229,6 +485,9 @@ header .right-section .profile .p{
         display: flex;
     }
     header #tablet-search{
+        display: none;
+    }
+    main #carouselExampleFade{
         display: none;
     }
 }
