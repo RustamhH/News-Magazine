@@ -178,9 +178,41 @@ header .right-section .profile .p{
     margin-top: 45px;
 }
 
+.file-path-section #postname-mobile {
+    display: none;
+}
+
+.main-section {
+    display: flex;
+    width: 1512px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
 
 
+.main-section .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
 
+
+.main-section .left-section .post-header {
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    width: 1128px;
+    height: 604px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 100px;
+}
+
+.main-section .left-section .post-header .elements {
+    display: flex;
+    gap: 79px;
+}
 
 /* Main End */
 
@@ -456,6 +488,12 @@ footer .right-section .follow-instagram {
     }
     main .file-path-section {
         width: 358px;
+    }
+    main .file-path-section #postname-desktop {
+        display: none;
+    }
+    main .file-path-section #postname-mobile {
+        display: flex;
     }
 
 }
