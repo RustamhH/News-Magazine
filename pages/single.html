@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/single.css">
+    <title>Single</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<script src="https://kit.fontawesome.com/5ac1ad0237.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+<body>
+
+    <!--!Header-->
+ 
+    <header>
+        <div class="header-div container">
+            <div class="left-section">
+                <div>
+                    <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                        <img src="/images/index/menu.png">
+                    </a> 
+                </div>
+                
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <p class="logo-text-hamburger">MEGA.news</p>
+                    <a href="#" data-bs-dismiss="offcanvas"><img src="/images/index/close.png" alt=""></a>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown" style="font-weight: 700; font-size: 16px; color: #3E3232; border-radius: 12px; margin-bottom: 10px;">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between" style="padding-left: 10px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="font-weight: 700; font-size: 16px; color: #3E3232; border-radius: 12px; margin-bottom: 10px;">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between" style="padding-left: 10px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" style="font-weight: 700; padding-left: 10px; font-size: 16px; color: #3E3232; margin-bottom: 10px;" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" style="font-weight: 700; padding-left: 10px; font-size: 16px; color: #3E3232;" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <p class="logo-text">MEGA.news</p>
+                <div class="navbar">
+                    <select><option>Categories</option></select>
+                    <select><option>Pages</option></select>
+                    <a href="">Contact Us</a>
+                    <a href="">About Us</a>
+                </div>
+            </div>
+     
+            <div class="right-section">
+                <div id="desktop-search" class="search-section">
+                    <a href="#">
+                        <i id="ellipsis" class="fa-solid fa-ellipsis-vertical"></i>
+                    </a>
+                    <div class="search-box">
+                        <form class="d-flex" role="search">
+                            <div class="search-input d-flex align-items-center p-2 px-2 rounded-3">
+                                <div class="left-icon d-flex align-items-center">
+                                    <input class="ms-3" type="search" placeholder="Search Anything" aria-label="Search">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="#" style="color: var(--Black, #3E3232);">
+                        <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <div class="profile">
+                    <img class="avatar" src="/images/index/behzad.png" alt="">
+                    <div class="p">Behzad</div>
+                    <a href=""><img src="/images/index/down.png" alt=""></a>
+                </div>
+                <div class="save-button">
+                    <a href=""><img src="/images/index/save-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="tablet-search" class="search-section">
+            <a href="#">
+                <i id="ellipsis" class="fa-solid fa-ellipsis-vertical"></i>
+            </a>
+            <div class="search-box">
+                <form class="d-flex" role="search">
+                    <div class="search-input d-flex align-items-center p-2 px-2 rounded-3">
+                        <div class="left-icon d-flex align-items-center">
+                            <input class="ms-3" type="search" placeholder="Search Anything" aria-label="Search">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a href="#" style="color: var(--Black, #3E3232);">
+                <i id="search" class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+    </header>
+ 
+    <!--!Header End-->
+    
+
+
+
+
+    <main>
+
+        <div class="file-path-section">
+            <div style="font-size: 12px;color: #3E3232;width: 33px;">Home</div>
+            <img style="width: 16px;height: 12px;" src="/images/writer/path.png" alt="">
+            <div style="font-size: 12px;color: #3E3232;width: 48px;">Featured</div>
+            <img style="width: 16px;height: 12px;" src="/images/writer/path.png" alt="">
+            <div style="font-size: 12px;color:#9F9898;width: 343px;">How To Spend The Perfect Day On Croatia’s Most Magical Island</div>
+        </div>
+
+
+    </main>
+
+
+
+    <!-- Footer Start -->
+
+
+    <footer style="margin-top: 100px;">
+        <div class="left-section">
+
+            <div class="inner-section-1">
+                <div class="mega-news-section">
+                    <div class="header-text d-flex align-items-center gap-2">
+                        <img src="/images/index/Rectangle.png" alt="">
+                        <p style="font-size: 20px;">Mega News</p>
+                    </div>
+                    <p style="color: #3E3232;width: 350px;text-align: justify;font-size: 14px;">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. 
+                        In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. 
+                        Mattis pellentesque id nibh tortor id aliquet lectus proin
+                    </p>
+                </div>
+                <div class="categories-section">
+                    <div class="header-text d-flex align-items-center gap-2">
+                        <img src="/images/index/Rectangle.png" alt="">
+                        <p style="font-size: 20px;">Categories</p>
+                    </div>
+                    <div class="texts-list">
+                        <p>Culture</p>
+                        <p>Fashion</p>
+                        <p>Featured</p>
+                        <p>Food</p>
+                        <p>Healthy Living</p>
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="inner-section-2">
+                <div class="newsletters-section">
+                    <div class="header-text d-flex align-items-center gap-2">
+                        <img src="/images/index/Rectangle.png" alt="">
+                        <p style="font-size: 20px;">Newsletters</p>
+                    </div>
+
+                    <div class="email-input">
+                        <form>
+                            <div class="input-group">
+                                <input id="email" class="form-control border-white" id="email" name="email" type="text" placeholder="Write Your Email .."/>
+                                <div id="envelope" class="input-group-addon align-items-center bg-transparent d-flex">
+                                    <i style="cursor: pointer;" class="fa-solid fa-envelope"></i>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="social-network-section">
+
+                    <div class="header-text d-flex align-items-center gap-2">
+                        <img src="/images/index/Rectangle.png" alt="">
+                        <p style="font-size: 20px;">Social Network</p>
+                    </div>
+
+                    <div class="icons-section">
+                        <a href=""><img src="/images/index/instagramicon.png" alt=""></a>
+                        <a href=""><img src="/images/index/twittericon.png" alt=""></a>
+                    </div>
+    
+                </div>
+            </div>
+            
+            <div class="privacy-policy-section">
+                <p class="left-text" style="text-transform: capitalize;">privacy policy | terms & conditions</p>
+                <p style="text-transform: capitalize;">all copyright (c) 2022 reserved</p>
+            </div>
+        
+        </div>
+
+        <div class="right-section">
+            <div class="comments">
+                <div class="header-text d-flex align-items-center gap-2">
+                    <img src="/images/index/Rectangle.png" alt="">
+                    <p style="font-size: 20px;">Social Network</p>
+                </div>
+                
+                <div>
+                    <div class="comments-borders ms-3 mt-2">
+                        <h5>Ellsmartx</h5>
+                        <p>how nice does this look 😍 I feel it should be...</p>
+                      </div>
+             
+                      <div class="comments-borders ms-3 mt-2">
+                        <h5>cassia</h5>
+                        <p>Take a rest, i'll be cheer up you again in 2 next game...</p>
+                      </div>
+             
+                      <div class="comments-borders ms-3 mt-2">
+                        <h5>Amanda</h5>
+                        <p>you were stunning today, jan! 💗 great match 👍🏽👍🏽</p>
+                      </div>
+             
+                      <div class="comments-borders ms-3 mt-2">
+                        <h5>Denis Simonassi</h5>
+                        <p>It was a great match today Janzi! You did great😉🇩🇪</p>
+                    </div>
+                </div>
+               
+            </div>
+       
+            <div class="follow-instagram">
+                
+                <div class="header-text d-flex align-items-center gap-2">
+                    <img src="/images/index/Rectangle.png" alt="">
+                    <p style="font-size: 20px;">Follow On Instagram</p>
+                </div>
+
+                <div>
+                    <div class="instagram-images d-flex ms-3">
+                        <img  src="/images/index/footercar.png" alt="">
+                        <img class="ms-3" src="/images/index/footeranimal.png" alt="">
+                        <img class="ms-3" src="/images/index/footertechnology.png" alt="">
+                      </div>
+             
+                      <div class="instagram-images d-flex ms-3 mt-3">
+                        <img  src="/images/index/footerfood.png" alt="">
+                        <img class="ms-3" src="/images/index/footermusic.png" alt="">
+                        <img class="ms-3" src="/images/index/footerdance.png" alt="">
+                      </div>
+             
+                      <div class="instagram-images d-flex ms-3 mt-3">
+                        <img  src="/images/index/footeranimal2.png" alt="">
+                        <img class="ms-3" src="/images/index/footerdance2.png" alt="">
+                        <img class="ms-3" src="/images/index/footersport.png" alt="">
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <!-- Footer End -->
+
+
+
+
+
+
+
+</body>
+
+<script src="/scripts/single.js"></script>
+
+
+
+</html>

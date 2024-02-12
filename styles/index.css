@@ -130,6 +130,8 @@ header .search-box input{
 header #tablet-search{
     display: none;
     width: 604px;
+    margin-bottom: 25px;
+
 }
 
 header #desktop-search .search-box input{
@@ -257,7 +259,6 @@ main .news-slider-section .news-item{
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 60px;
 }
 
 main .news-slider-section .news-item div{
@@ -315,6 +316,17 @@ main #carouselExampleFade{
 
 /* Popular Posts Start */
 
+.popular-posts-section{
+    width: 1512px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.popular-posts-section .outerdiv {
+    overflow-x: hidden;
+}
+
+
 .popular-posts-section .card{
     display: flex;
     flex-direction: column;
@@ -323,8 +335,9 @@ main #carouselExampleFade{
     flex: none;
     outline: none;
     position: relative;
-    gap:12px;
+    gap:16px;
     border-radius: 12px;
+    width: 360px;
     padding:10px;
     background-color: white;
 }
@@ -336,6 +349,8 @@ main #carouselExampleFade{
     width: 328px;
     gap:8px;
 }
+
+
 
 .popular-posts-section .card .texts .big-text{
     font-weight: 700;
@@ -370,16 +385,638 @@ main #carouselExampleFade{
 .popular-posts-section .card .author-texts .small-text{
     font-size: 12px;
 }
+
+.popular-posts-section {
+    background-color: white;
+    transition: background-color 300ms linear;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+}
+
+.popular-posts-section:hover {
+    background-color: #f9f9f9;
+}
+
 /* Popular Posts End */
 
 
 
 
 
+/* Sport Table Section Start */
+
+
+main .sport-table-section {
+    display: flex;
+    justify-content: center;
+}
+
+main .sport-table-section #desktop {
+    margin-top: 70px;
+    max-width: 100%;
+    height: auto;
+}
+
+main .sport-table-section #tablet {
+    display: none;
+}
+
+main .sport-table-section #mobile {
+    display: none;
+}
+
+main .mobile-navbar-fixed{
+    display: none;
+}
+
+/* Sport Table Section End */
+
+
+
+
+
+
+
+
+/* New Posts Section Start */
+
+.new-posts-section {
+    width: 1512px;
+    margin: 0 auto;
+}
+
+.new-posts-section .new-cards{
+    flex-wrap: wrap;
+}
+
+.new-posts-section .new-cards .card {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    outline: none;
+    flex: none;
+    gap:10px;
+    border-radius: 12px;
+    width: 744px;
+    padding: 10px;
+    background-color: white;
+}
+
+.new-posts-section .new-cards .card .right-section {
+    width: 374px;
+    gap:26px;
+}
+
+.new-posts-section .new-cards .card .right-section .texts {
+    display: flex;
+    flex-direction: column;
+    color: #3E3232;
+    gap:16px;
+}
+
+.new-posts-section .new-cards .card .right-section .author {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    padding: 13px 16px 13px 16px;
+}
+
+
+.new-posts-section .new-cards .card .right-section .texts .big-text {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 6px;
+}
+.new-posts-section .new-cards .card .right-section .texts .small-text {
+    font-size: 14px;
+    padding-left: 6px;
+    padding-bottom: 8px;
+}
+
+.new-posts-section .new-cards .card .author .author-texts{
+    display: flex;
+    flex-direction: column;
+    color: #3E3232;
+    width: 268px;
+    gap:4px;
+}
+
+
+.new-posts-section .new-cards .card .author .author-texts .big-text{
+    font-weight: 700;
+    font-size: 14px;
+}
+.new-posts-section .new-cards .card .author .author-texts .small-text{
+    font-size: 12px;
+}
+
+
+.new-posts-section .header .buttons #new-posts-back {
+    display: none;
+}
+.new-posts-section .header .buttons #new-posts-next{
+    display: none;
+}
+
+/* New Posts Section End */
+
+
+
+
+
+
+/* Latest Posts Section Start */
+
+.latest-posts-section {
+    width: 1512px; 
+    margin: 0 auto; 
+    gap:30px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-posts-section .latest-posts-cards {
+    display: flex;
+    gap: 24px;
+}
+
+
+.latest-posts-section .latest-posts-cards .latest-post-big {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.latest-posts-section .latest-posts-cards .latest-post-big .texts {
+    position: absolute;
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    bottom:10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 12px;
+    display: flex;
+    gap:16px;
+    flex-direction: column;
+    padding: 16px;
+}
+
+
+.latest-posts-section .latest-posts-cards .latest-post-big .texts .big-text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.latest-posts-section .latest-posts-cards .latest-post-big .texts .small-text {
+    font-size: 14px;
+}
+
+
+
+.latest-posts-section .latest-posts-cards .latest-posts-slider {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    width: 702px;   
+    gap:24px;
+}
+
+
+
+.latest-posts-section .latest-posts-cards .latest-posts-slider .card {
+    display: flex;
+    flex-direction: row;
+    width: 488px;
+    gap:16px;
+    border: none;
+    flex: none;
+    outline: none;
+    padding: 10px;
+}
+
+.latest-posts-section .latest-posts-cards .latest-posts-slider .card img {
+    width: 190px;
+    height: 190px;
+}
+
+.latest-posts-section .latest-posts-cards .latest-posts-slider .card .texts {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.latest-posts-section .latest-posts-cards .latest-posts-slider .card .texts .small-text {
+    font-size: 14px;
+}
+.latest-posts-section .latest-posts-cards .latest-posts-slider .card .texts .big-text {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#latest-posts-showAll {
+    display: none;
+}
+
+
+#carouselExampleFade1{
+    display: none;
+}
+
+
+/* Latest Posts Section End */
+
+
+
+
+
+
+
+
+
+/* Trendy Posts Section Start */
+
+
+.trendy-posts-section{
+    width: 1512px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.trendy-posts-section .trendy-posts-outerdiv {
+    overflow-x: hidden;
+}
+
+
+.trendy-posts-section .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    flex: none;
+    outline: none;
+    position: relative;
+    gap:16px;
+    border-radius: 12px;
+    width: 360px;
+    padding:10px;
+    background-color: white;
+}
+
+.trendy-posts-section .card .texts{
+    display: flex;
+    flex-direction: column;
+    color: #3E3232;
+    width: 328px;
+    gap:8px;
+}
+
+
+
+.trendy-posts-section .card .texts .big-text{
+    font-weight: 700;
+    font-size: 16px;
+}
+.trendy-posts-section .card .texts .small-text{
+    font-size: 14px;
+}
+
+.trendy-posts-section .card .author{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    padding: 13px 16px 13px 16px;
+}
+
+.trendy-posts-section .card .author .author-texts{
+    display: flex;
+    flex-direction: column;
+    color: #3E3232;
+    width: 234px;
+    gap:4px;
+}
+
+
+.trendy-posts-section .card .author .author-texts .big-text{
+    font-weight: 700;
+    font-size: 14px;
+}
+.trendy-posts-section .card .author-texts .small-text{
+    font-size: 12px;
+}
+
+
+.trendy-posts-section {
+    background-color: white;
+    transition: background-color 300ms linear;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+}
+
+.trendy-posts-section:hover {
+    background-color: #f9f9f9;
+}
+
+
+/* Trendy Posts Section End */
+
+
+
+
+
+/* Weather Section Start */
+
+.weather-posts-section {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
+    gap: 24px;
+    justify-content: center;
+}
+
+.weather-posts-section #big-weather-post {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+main #weather-post-tablet {
+    display: none;
+}
+
+main #weather-post-mobile{
+    display: none;
+}
+
+/* Weather Section End */
+
+
+
+
+
+/* Top Posts Section Start */
+
+
+.top-posts-section{
+    width: 1512px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.top-posts-section {
+    background-color: white;
+    transition: background-color 300ms linear;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+}
+
+.top-posts-section:hover {
+    background-color: #f9f9f9;
+}
+
+.top-posts-section .top-posts-outerdiv {
+    overflow-x: hidden;
+}
+
+
+.top-posts-section .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    flex: none;
+    outline: none;
+    position: relative;
+    gap:16px;
+    border-radius: 12px;
+    width: 360px;
+    padding:10px;
+    background-color: white;
+}
+
+.top-posts-section .card .texts{
+    display: flex;
+    flex-direction: column;
+    color: #3E3232;
+    width: 328px;
+    gap:8px;
+}
+
+
+
+.top-posts-section .card .texts .big-text{
+    font-weight: 700;
+    font-size: 16px;
+}
+.top-posts-section .card .texts .small-text{
+    font-size: 14px;
+}
+
+.top-posts-section .card .author{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    padding: 13px 16px 13px 16px;
+}
+
+.top-posts-section .card .author .author-texts{
+    display: flex;
+    flex-direction: column;
+    color: #3E3232;
+    width: 234px;
+    gap:4px;
+}
+
+
+.top-posts-section .card .author .author-texts .big-text{
+    font-weight: 700;
+    font-size: 14px;
+}
+.top-posts-section .card .author-texts .small-text{
+    font-size: 12px;
+}
+
+
+
+
+
+/* Top Posts Section End */
+
 
 
 
 /* Main End */
+
+
+
+
+
+
+/* Footer Start */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer .inner-section-1 {
+    display: flex;
+    gap:152px;
+    padding-left: 204px;
+}
+footer .inner-section-2 {
+    display: flex;
+    gap:102px;
+    padding-left: 204px;
+}
+
+footer .left-section {
+    display: flex;
+    flex-direction: column;
+    gap:31px;
+    background-color: #f5f5f5;
+    width: 948px;
+    height: 483px;
+    border-radius: 0 50px 50px 0;
+    padding-top:40px;
+}
+
+
+
+footer .left-section .mega-news-section {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+footer .left-section .categories-section {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+footer .left-section .categories-section .texts-list {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    font-size: 12px;
+}
+
+footer .left-section .newsletters-section {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+footer .left-section .social-network-section {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+footer .left-section .social-network-section .icons-section {
+    display: flex;
+    gap:15px;
+}
+ 
+footer .newsletters-section .email-input #email{
+    width: 399px;
+    height: 48px;
+    border-radius: 12px;
+}
+ 
+footer .newsletters-section .email-input #envelope{
+    margin-left: -35px;
+    z-index: 20;
+    padding-right: 14px;
+    border-radius: 12px;
+    background: transparent;
+}
+
+
+
+footer .left-section .privacy-policy-section {
+    display: flex;
+    width: 95%;
+    padding: 8px 12px 8px 205px;
+    border-radius: 0px 12px 12px 0px;
+    font-size: 12px;
+    background-color:  #ecebeb;
+    color:  #3E3232;
+}
+
+footer .left-section .privacy-policy-section .left-text {
+    width: 498px;
+}
+
+
+
+
+
+footer .right-section .comments .comments-borders{
+    background-color: rgba(245, 245, 245, 1);
+    padding: 16px;
+    text-transform: capitalize;
+    border-radius: 12px;
+}
+ 
+footer .right-section .comments p{
+    font-size: 12px;
+}
+footer .right-section .comments h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer .right-section .comments {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+ 
+
+footer .right-section {
+    display: flex;
+    gap:24px;
+}
+
+footer .right-section {
+    padding: 40px;
+}
+
+
+footer .right-section .follow-instagram {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer End */
+
+
 
 
 
@@ -402,6 +1039,9 @@ main #carouselExampleFade{
 /* Media Queries */
 
 @media screen and (max-width: 1512px) {
+    header {
+        box-shadow: 0px 0px 32px 0px #00000012;
+    }
     header{
         gap:20px;
         align-items: center;
@@ -444,10 +1084,107 @@ main #carouselExampleFade{
     main #carouselExampleFade{
         display: flex;
     }
+    main .popular-posts-section{    
+        width: 604px;
+        margin-top: 50px;
+    }
+    main .sport-table-section #desktop {
+        display: none;
+    }
+    main .sport-table-section #tablet {
+        display: flex;
+        margin-top: 30px;
+    }
+    main .mobile-navbar-fixed {
+        display: none;
+    }
+    main .new-posts-section {
+        width: 604px;
+    }
+    main .new-posts-section .new-cards .card {
+        width: 604px;
+    }
+    main .new-posts-section .new-cards .card .image {
+        width: 190px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    main .new-posts-section .new-cards {
+        flex-direction: column;
+    }
+    main .new-posts-section .header .buttons #new-posts-back {
+        display: none;
+    }
+    main .new-posts-section .header .buttons #new-posts-next{
+        display: none;
+    }
+    main .trendy-posts-section{    
+        width: 604px;
+        margin-top: 50px;
+    }
+    main .weather-posts-section {
+        display: none;
+    }
+    main #weather-post-tablet {
+        display: flex;
+        margin: 0 auto;
+    }
+    main .top-posts-section{    
+        width: 604px;
+        margin-top: 50px;
+    }
+    main .latest-posts-section .latest-posts-cards {
+        display: none;
+    }
+    main .latest-posts-section {
+        width: 604px;
+    }
+    main #carouselExampleFade1{
+        display: flex;
+        width:604px; 
+        margin:0 auto;
+    }
+    #latest-posts-showAll {
+        display: flex;
+    }
+    #latest-posts-back {
+        display: none;
+    }
+    #latest-posts-next {
+        display: none;
+    }
+    footer .left-section {
+        width: 696px;
+    }
+    footer .inner-section-1 {
+        padding-left: 68px;
+        gap: 36px;
+    }
+    footer .inner-section-2 {
+        padding-left: 68px;
+        gap: 23px;
+    }
+    footer .newsletters-section .email-input #email {
+        width: 350px;
+    }
+    footer .left-section .privacy-policy-section {
+        width: 674px;
+        padding: 8px 12px 8px 69px;
+    }
+    footer .left-section .privacy-policy-section .left-text {
+        width: 400px;
+    }
+    footer .right-section {
+        display: none;
+    }
+ 
 }
 
 
 @media screen and (max-width: 600px) {
+    header {
+        box-shadow: none;
+    }
     header #desktop-search{
         width: 300px;
         margin-right: 0px;
@@ -459,7 +1196,6 @@ main #carouselExampleFade{
         padding-top: 45px;
         gap:10px;
     }
-
     header .left-section{
         padding-left: 0;
         padding-right: 0;
@@ -488,6 +1224,96 @@ main #carouselExampleFade{
         display: none;
     }
     main #carouselExampleFade{
+        display: none;
+    }
+    main .popular-posts-section{    
+        width: 358px;
+        margin-top: 30px;
+    }
+    main .sport-table-section #mobile {
+        display: flex;
+        margin-top: 40px;
+    }
+    main .sport-table-section #tablet {
+        display: none;
+    }
+    main .mobile-navbar-fixed {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        gap:48px;
+        width: 390px;
+        border-radius: 16px 16px 0 0;
+        padding: 15px 30px 15px 30px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05); /* 5% box shadow */
+    }
+    main .new-posts-section .header .buttons #showAll{
+        display: none;
+    }
+    main .new-posts-section .header .buttons #new-posts-back {
+        display: flex;
+    }
+    main .new-posts-section .header .buttons #new-posts-next{
+        display: flex;
+    }
+
+    main .new-posts-section {
+        width: 358px;
+    }
+    main .new-posts-section .new-posts-outerdiv {
+        overflow-x: hidden;
+    }
+    main .new-posts-section .new-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    main .new-posts-section .new-cards .card {
+        width: 358px;
+        flex-direction: column;
+        position: relative;
+        gap:16px;        
+    }
+    main .new-posts-section .new-cards .card .image {
+        width: 338px;
+    }
+    main .new-posts-section .new-cards .card .author {
+        width: 338px;
+    }
+    main .new-posts-section .new-cards .card .right-section {
+        gap:16px;
+    }
+    main .trendy-posts-section{    
+        width: 358px;
+        margin-top: 30px;
+    }
+    main #weather-post-tablet {
+        display: none;
+    }
+    main #weather-post-mobile {
+        display: flex;
+        margin: 0 auto;
+    }
+    main .top-posts-section{    
+        width: 358px;
+        margin-top: 30px;
+    }
+    main .latest-posts-section {
+        width: 358px;
+    }
+    main #carouselExampleFade1{
+        width:358px; 
+    }
+    main .carousel-item .rounded-item {
+        bottom:10px;
+        left: 10px;
+        right: 10px;
+        padding:10px 0px 20px 20px;
+        font-size: 16px;
+    }
+    footer {
         display: none;
     }
 }
