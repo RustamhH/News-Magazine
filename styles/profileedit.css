@@ -442,6 +442,7 @@ footer .left-section .privacy-policy-section .left-text {
 footer .right-section .comments .comments-borders{
     background-color: rgba(245, 245, 245, 1);
     padding: 16px;
+    width: 360px;
     text-transform: capitalize;
     border-radius: 12px;
 }
@@ -451,13 +452,12 @@ footer .right-section .comments p{
 }
 footer .right-section .comments h5{
     font-size: 16px;
-    font-weight: 700;
 }
 
 footer .right-section .comments {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
 }
 
  
@@ -475,8 +475,10 @@ footer .right-section {
 footer .right-section .follow-instagram {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
+
+
 
 
 
@@ -494,38 +496,29 @@ footer .right-section .follow-instagram {
     .profile-edit {
         width: 358px;
     }
-
     .text-boxes-container {
         flex-direction: column;
     }
     .bottom-section {
         flex-direction: column;
     }
-
     form .text-boxes-container .text-box-card input {
         width: 358px;
     }
-
     form .banner-section .add-box {
         flex-direction: column;
         height: 360px;
     }
-
-
     form .banner-section .add-box .right-section {
         flex-direction: column;
     }
-
     form .banner-section .add-box .right-section button {
         align-self: center;
     }
-
-
     form .bottom-section .explanation-section .buttons-section textarea {
         width: 318px;
         height: 377px;
     }
-
     form .bottom-section .explanation-section .buttons-section .buttons .tablet {
         display: flex;
         gap: 24px;
@@ -533,11 +526,9 @@ footer .right-section .follow-instagram {
     form .bottom-section .explanation-section .buttons-section .buttons .desktop {
         display: none;
     }
-
     main {
         margin-bottom: 120px;
     }
-
     form .mobile-navbar-fixed {
         display: flex;
         align-items: center;
@@ -549,8 +540,9 @@ footer .right-section .follow-instagram {
         background-color: white;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05); /* 5% box shadow */
     }
-
-
+    main .file-path-section {
+        width: 358px;
+    }
 
     header {
         box-shadow: none;
@@ -565,6 +557,7 @@ footer .right-section .follow-instagram {
     header .header-div {
         padding-top: 45px;
         gap:10px;
+        align-items: center;
     }
     header .left-section{
         padding-left: 0;
@@ -574,7 +567,9 @@ footer .right-section .follow-instagram {
         padding-left: 0;
         padding-right: 0;
     }
-    
+    header .left-section .btn {
+        display: flex;
+    }
     header .left-section .navbar{
         display: none;
     }
@@ -597,8 +592,5 @@ footer .right-section .follow-instagram {
         display: none;
     }
     
-    main .file-path-section {
-        width: 358px;
-    }
 
 }

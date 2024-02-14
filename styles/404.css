@@ -309,6 +309,7 @@ footer .left-section .privacy-policy-section .left-text {
 footer .right-section .comments .comments-borders{
     background-color: rgba(245, 245, 245, 1);
     padding: 16px;
+    width: 360px;
     text-transform: capitalize;
     border-radius: 12px;
 }
@@ -318,13 +319,12 @@ footer .right-section .comments p{
 }
 footer .right-section .comments h5{
     font-size: 16px;
-    font-weight: 700;
 }
 
 footer .right-section .comments {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
 }
 
  
@@ -342,8 +342,10 @@ footer .right-section {
 footer .right-section .follow-instagram {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
+
+
 
 
 
