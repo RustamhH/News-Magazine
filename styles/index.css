@@ -188,6 +188,7 @@ header .right-section .profile .p{
 /* Main Start */
 
 
+
 /* Carousel Start */
 .carousel-section{
     width: 1512px;
@@ -867,6 +868,8 @@ main #weather-post-mobile{
 
 footer {
     display: flex;
+    align-items: center;
+    overflow: hidden;
     justify-content: center;
 }
 
@@ -949,7 +952,8 @@ footer .newsletters-section .email-input #envelope{
 
 footer .left-section .privacy-policy-section {
     display: flex;
-    width: 95%;
+    gap: 16px;
+    width: 908px;
     padding: 8px 12px 8px 205px;
     border-radius: 0px 12px 12px 0px;
     font-size: 12px;
